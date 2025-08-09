@@ -24,15 +24,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "18"   # 18이 가장 호환 잘 됨
-          cache: "npm"
+          node-version: "18"   # 18이 안정적
 
-      - name: Install
-        run: npm ci || npm i
+      - name: Install deps
+        run: npm install       # lock 파일 없으니 npm ci 대신 install
 
       - name: Build
         env:
-          VITE_BASE: "/pokemon-quiz/"   # ← 저장소 이름과 동일, 앞뒤 슬래시 유지
+          VITE_BASE: "/pokemon-quiz/"   # 저장소명과 동일, 앞뒤 슬래시 유지
         run: npm run build
 
       - name: Upload artifact
