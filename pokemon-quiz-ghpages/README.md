@@ -11,7 +11,7 @@
    - `/.github/workflows/deploy.yml` 파일에서 `env: VITE_BASE: '/pokemon-quiz/'` 부분을 **본인 저장소명으로 변경**
 
 4. main 브랜치로 push하면, Actions가 자동으로 빌드/배포합니다.
-5. 잠시 후 **Settings → Pages**에 표시되는 URL을 친구와 공유하세요.
+5. 잠시 후 **Settings → Pages**에 표시되는 URL
    - 일반적으로 `https://<your-id>.github.io/pokemon-quiz` 형태입니다.
 
 ## 로컬 실행
