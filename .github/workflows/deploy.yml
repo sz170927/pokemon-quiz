@@ -20,21 +20,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "18"   # 18이 가장 호환 잘 됨
           cache: "npm"
+
       - name: Install
         run: npm ci || npm i
+
       - name: Build
         env:
-          VITE_BASE: "/pokemon-quiz/"
+          VITE_BASE: "/pokemon-quiz/"   # ← 저장소 이름과 동일, 앞뒤 슬래시 유지
         run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "dist"
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
