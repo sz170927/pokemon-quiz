@@ -125,6 +125,201 @@ const SAMPLE_POKEMON = [
     base_stats: { hp: 78, atk: 84, def: 78, spa: 109, spd: 85, spe: 100 },
     image_url: ""
   },
+  {
+    "dex": 430,
+    "korean_name": "돈크로우",
+    "english_name": "Honchkrow",
+    "types": [
+      "악",
+      "비행"
+    ],
+    "base_stats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 52,
+      "spa": 105,
+      "spd": 52,
+      "spe": 71
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 229,
+    "korean_name": "헬가",
+    "english_name": "Houndoom",
+    "types": [
+      "악",
+      "불꽃"
+    ],
+    "base_stats": {
+      "hp": 75,
+      "atk": 90,
+      "def": 50,
+      "spa": 110,
+      "spd": 80,
+      "spe": 95
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 19,
+    "korean_name": "꼬렛",
+    "english_name": "Rattata",
+    "types": [
+      "노말"
+    ],
+    "base_stats": {
+      "hp": 30,
+      "atk": 56,
+      "def": 35,
+      "spa": 25,
+      "spd": 35,
+      "spe": 72
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 381,
+    "korean_name": "라티오스",
+    "english_name": "Latios",
+    "types": [
+      "드래곤",
+      "에스퍼"
+    ],
+    "base_stats": {
+      "hp": 80,
+      "atk": 90,
+      "def": 80,
+      "spa": 130,
+      "spd": 110,
+      "spe": 110
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 380,
+    "korean_name": "라티아스",
+    "english_name": "Latias",
+    "types": [
+      "드래곤",
+      "에스퍼"
+    ],
+    "base_stats": {
+      "hp": 80,
+      "atk": 80,
+      "def": 90,
+      "spa": 110,
+      "spd": 130,
+      "spe": 110
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 95,
+    "korean_name": "롱스톤",
+    "english_name": "Onix",
+    "types": [
+      "바위",
+      "땅"
+    ],
+    "base_stats": {
+      "hp": 35,
+      "atk": 45,
+      "def": 160,
+      "spa": 30,
+      "spd": 45,
+      "spe": 70
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 157,
+    "korean_name": "블레이범",
+    "english_name": "Typhlosion",
+    "types": [
+      "불꽃"
+    ],
+    "base_stats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 109,
+      "spd": 85,
+      "spe": 100
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 823,
+    "korean_name": "아머까오",
+    "english_name": "Corviknight",
+    "types": [
+      "비행",
+      "강철"
+    ],
+    "base_stats": {
+      "hp": 98,
+      "atk": 87,
+      "def": 105,
+      "spa": 53,
+      "spd": 85,
+      "spe": 67
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 658,
+    "korean_name": "개굴닌자",
+    "english_name": "Greninja",
+    "types": [
+      "물",
+      "악"
+    ],
+    "base_stats": {
+      "hp": 72,
+      "atk": 95,
+      "def": 67,
+      "spa": 103,
+      "spd": 71,
+      "spe": 122
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 121,
+    "korean_name": "아쿠스타",
+    "english_name": "Starmie",
+    "types": [
+      "물",
+      "에스퍼"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 85,
+      "spa": 100,
+      "spd": 85,
+      "spe": 115
+    },
+    "image_url": ""
+  },
+  {
+    "dex": 217,
+    "korean_name": "링곰",
+    "english_name": "Ursaring",
+    "types": [
+      "노말"
+    ],
+    "base_stats": {
+      "hp": 90,
+      "atk": 130,
+      "def": 75,
+      "spa": 75,
+      "spd": 75,
+      "spe": 55
+    },
+    "image_url": ""
+  }
 ];
 
 // ===== 로컬 스토리지 키 =====
