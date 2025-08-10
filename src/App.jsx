@@ -426,6 +426,22 @@ export default function App(){
           <div className="flex items-center gap-2">
             <button onClick={exportJson} className="px-3 py-1.5 rounded-xl border bg-white/70">데이터 내보내기</button>
             <button onClick={importJson} className="px-3 py-1.5 rounded-xl border bg-white">데이터 가져오기</button>
+               <button
+      onClick={() => {
+        if (!confirm("저장된 문제 데이터와 리더보드를 모두 초기화할까요?")) return;
+        localStorage.removeItem('pokemon_quiz_data_v1');   // 문제 데이터
+        localStorage.removeItem('pokemon_quiz_scores_v1'); // 리더보드
+        location.reload(); // 초기값(SAMPLE_POKEMON)으로 재로딩
+      }}
+      className="px-3 py-1.5 rounded-xl border bg-white text-red-600"
+      title="저장된 데이터 삭제 후 초기값으로 되돌립니다"
+    >
+      데이터 초기화
+    </button>
+
+    <InfoPopover />
+  </div>
+</header>
             <InfoPopover />
           </div>
         </header>
