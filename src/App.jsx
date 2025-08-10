@@ -7,6 +7,15 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 // - 기능: 초성/타입/종족값 모드, 로컬 리더보드, JSON 임포트/익스포트
 // =============================
 
+function makeOrder(n) {
+  const idx = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [idx[i], idx[j]] = [idx[j], idx[i]];
+  }
+  return idx;
+}
+
 // ===== 유틸: 한글 초성 추출 =====
 const CHO = [
   "ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ",
@@ -148,7 +157,7 @@ export default function App(){
     setStatAnswers({hp:"", atk:"", def:"", spa:"", spd:"", spe:""});
     setRunning(false);
   }
-  function start(){ setRunning(true); setScore(0); setLives(3); setQIndex(0); }
+  function start(){ setRunning(true); setScore(0); setLives(3); setQIndex(0); setOrder(makeOrder(data.length));}
   function finishIfDead(nextLives){
     if(nextLives<=0){
       setRunning(false);
